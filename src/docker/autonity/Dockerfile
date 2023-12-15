@@ -12,6 +12,6 @@ RUN apk add --no-cache ca-certificates
 COPY --from=builder /app/autonity/build/bin/autonity /usr/local/bin/
 #COPY --from=builder /app/autonity/build/bin/ethkey /usr/local/bin/
 
-EXPOSE 8545 8546 8547 30303 30303/udp
+EXPOSE 8245 8246 8247 30003 30003/udp
 ENTRYPOINT ["autonity"]
  
